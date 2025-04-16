@@ -14,7 +14,7 @@ def home():
     tabla_html = "<h1>🎯 Datos Filtrados</h1>"
     tabla_html = "<h2>Personas que tiene como inicio de ID los numeros (3, 4, 5, 7)/h2>"
     tabla_html += "<table border='1' cellpadding='5' cellspacing='0'>"
-    tabla_html += "<tr><th>ID</th><th>Nombre</th><th>Apellido</th></tr>"
+    tabla_html += "<tr><th>ID</th><th>Nombre</th><th>Apellido</th><th>Pais</th><th>Direccion</th></tr>"
 
     lineas = contenido.strip().split('\n')
     for linea in lineas:
