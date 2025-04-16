@@ -27,7 +27,7 @@ def home():
                 apellido = partes[2]
                 pais = partes[3]
                 direccion = partes[4]
-                tabla_html += f"<tr><td>{id_val}</td><td>{nombre}</td><td>{apellido}</td></tr>{pais}</td></tr>{direccion}</td></tr>"
+                tabla_html += f"<tr><td>{id_val}</td><td>{nombre}</td><td>{apellido}</td><td>{pais}</td><td>{direccion}</td></tr>"
 
     tabla_html += "</table>"
     return tabla_html
