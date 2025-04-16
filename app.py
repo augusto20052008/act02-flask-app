@@ -11,7 +11,8 @@ def home():
     contenido = response.text
 
     # Construimos el HTML
-    tabla_html = "<h1>Personas con ID iniciando en 3, 4, 5 o 7</h1>"
+    tabla_html = "<h1>🎯 Datos Filtrados</h1>"
+    tabla_html = "<h2>Personas que tiene como inicio de ID los numeros (3, 4, 5, 7)/h2>"
     tabla_html += "<table border='1' cellpadding='5' cellspacing='0'>"
     tabla_html += "<tr><th>ID</th><th>Nombre</th><th>Apellido</th></tr>"
 
@@ -24,7 +25,9 @@ def home():
                 id_val = partes[0]
                 nombre = partes[1]
                 apellido = partes[2]
-                tabla_html += f"<tr><td>{id_val}</td><td>{nombre}</td><td>{apellido}</td></tr>"
+                pais = partes[3]
+                direccion = partes[4]
+                tabla_html += f"<tr><td>{id_val}</td><td>{nombre}</td><td>{apellido}</td></tr>{pais}</td></tr>{direccion}</td></tr>"
 
     tabla_html += "</table>"
     return tabla_html
